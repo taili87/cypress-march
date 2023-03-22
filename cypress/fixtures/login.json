@@ -1,0 +1,9 @@
+{
+    "email": "admin@yourstore.com",
+    "password":"admin",
+    "verification":"Dashboard",
+    "emailLocator": "input[name=Email]",
+    "pwdLocator": "input[name=Password]",
+    "loginButtonLocator":"button[type='submit']",
+    "loginVerificationLocator": "div[class='content-header'] h1"
+}
