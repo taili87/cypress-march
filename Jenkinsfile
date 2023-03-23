@@ -39,9 +39,8 @@ pipeline{
         }
 
         stage('Reports'){
-            steps{
-               echo 'get test reports'
-            }
+            
+            publishHTML([allowMissing:false, alwaysLinkToLastBuild:false, keepAll: true, reportDir: 'cypress/report/html/', reportFiles: 'index.html',reportName:'Latest Test Reports'])
         }
     }
 
