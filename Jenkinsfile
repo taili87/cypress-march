@@ -40,7 +40,7 @@ pipeline{
 
         stage('Reports'){
             steps{
-                 publishHTML([allowMissing:false, alwaysLinkToLastBuild:false, keepAll: true, reportDir: 'cypress/report/html/', reportFiles: 'index.html',reportName:'Latest Test Reports'])
+                 publishHTML([allowMissing:false, alwaysLinkToLastBuild:false, keepAll: true, reportDir: 'cypress-march/cypress/reports/html/index.html', reportFiles: 'index.html'])
             }
            
         }
